@@ -2,8 +2,6 @@
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/kasperskytte/dropbox)][hub]
 
-[hub]: https://hub.docker.com/r/kasperskytte/dropbox
-
 Run Dropbox inside Docker. Fully working with local host folder mount or inter-container linking (via `--volumes-from`).
 
 This repository provides the [kasperskytte/dropbox](https://registry.hub.docker.com/u/kasperskytte/dropbox/) image.
