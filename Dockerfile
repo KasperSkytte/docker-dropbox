@@ -43,7 +43,10 @@ RUN mkdir -p /opt/dropbox \
 	&& chmod o-w /tmp \
 	&& chmod g-w /tmp \
 	# Prepare for command line wrapper
-	&& mv /usr/bin/dropbox /usr/bin/dropbox-cli
+	&& mv /usr/bin/dropbox /usr/bin/dropbox-cli \
+	# Enable Dropbox to monitor more files at once
+	&& echo fs.inotify.max_user_watches=100000 | sudo tee -a /etc/sysctl.conf \
+	&& sudo sysctl -p
 
 # Install init script and dropbox command line wrapper
 COPY run /root/
