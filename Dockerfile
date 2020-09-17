@@ -1,5 +1,5 @@
 FROM debian:jessie
-MAINTAINER Jan Broer <janeczku@yahoo.de>
+MAINTAINER Kasper Skytte Andersen <knaldhat@gmail.com>
 ENV DEBIAN_FRONTEND noninteractive
 
 # Following 'How do I add or remove Dropbox from my Linux repository?' - https://www.dropbox.com/en/help/246
